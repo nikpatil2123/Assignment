@@ -38,7 +38,7 @@ project/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/nikpatil2123/Assignment.git
 ```
 
 2. Install dependencies:
@@ -105,6 +105,4 @@ npm run dev
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details

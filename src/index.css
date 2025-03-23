@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type="radio"] {
+  @apply w-5 h-5 border-2 border-[#6C25FF] text-[#6C25FF];
+}
+
+input[type="radio"]:checked {
+  background-color: #6C25FF;
+  border-color: #6C25FF;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  @apply bg-white;
+  @apply placeholder:text-[#A0A0A0];
+  @apply text-[16px];
+  @apply placeholder:text-[16px];
+}
+
+
+.form-field {
+  @apply mb-5;
+}
+
+.form-label {
+  @apply block text-[#6C25FF] text-[14px] font-normal mb-1.5;
+}
+
+.form-input {
+  @apply w-full h-[46px] px-4 bg-white border border-[#E5E7EB] rounded-[8px] 
+         focus:ring-2 focus:ring-[#6C25FF] focus:border-transparent text-[#1D2939];
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  background: transparent;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6C25FF; /* Added focus state to match label color */
+}
+
+.form-group label {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #6C25FF; /* Changed to match your app's blue color theme */
+}
+
+.form-group .required {
+  color: #FF0000; /* Keeping the required asterisk red */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight;
+}
